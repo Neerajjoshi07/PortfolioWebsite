@@ -1,205 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="icon" href="icon/icon.jpeg"> 
+    <link rel="icon" href="icon/icon.jpeg" />
+    <link rel="stylesheet" href="/aboutStyles.css" />
+  </head>
 
-    <style>
-        * {
-            background-color: #222222;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        h1 {
-            text-align: center;
-            color: #007ced;
-        }
-
-
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left: 40px;
-            margin-right: 40px;
-            padding: 15px;
-            
-        }
-
-        nav .navlinks li a  {
-            text-decoration: none;
-            margin-right: 25px;
-            color: #fff;
-            font-size: 20px;
-        }
-
-        .navlinks a:hover {
-            color: chartreuse;
-        }
-
-        .logo p {
-            font-size: 25px;
-            color: #fff;
-            margin: 0 0;
-        }
-
-        .aboutContent p{
-            color: #fff;
-        }
-
-        nav .togglebtn {
-            width: 35px;
-            height: 35px;
-            position: absolute;
-            top: 24px;
-            right: 3%;
-            z-index: 5;
-            cursor: pointer;
-            display: none;
-        }
-        
-        nav .togglebtn span {
-            display: block;
-            background-color: #007ced;
-            margin: 5px 0px;
-            width: 100%;
-            height: 3px;
-            transition: 0.3s;
-            transition-property: transform, opacity;
-        }
-
-        nav .navlinks li {
-            display: inline-block;
-        }
-
-
-        @media(max-width:930px) {
-            nav .togglebtn {
-                display: initial;
-            }
-        
-            /* For toggle button */
-            .click {
-                top: 45px;
-            }
-        
-            .click span {
-                position: absolute;
-                margin-top: 12px;
-            }
-        
-            .click span:first-child {
-                transform: rotate(-40deg);
-            }
-        
-            .click span:nth-child(2) {
-                opacity: 0;
-                margin: 0;
-            }
-        
-            .click span:last-child {
-                transform: rotate(45deg);
-                top: 0;
-            }
-        
-            nav .navlinks {
-                position: absolute;
-                top: 110px;
-                right: -100%;
-                bottom: 0;
-                width: 60%;
-                height: 100vh;
-                background-color: #222;
-                z-index: 3;
-                box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
-                transition: 0.5s;
-                padding: 25px 0;
-            }
-        
-            nav .navlinks li {
-                display: block;
-            }
-        
-            nav .navlinks li a {
-                display: block;
-                margin-bottom: 15px;
-                text-align: center;
-            }
-        
-            nav .navlinks.open {
-                right: 0;
-            }
-        
-        }
-        
-
-        
-    </style>
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <div class="navbar">
-            <header>
-                <div class="wrapper">
-                    <div class="logo">
-                        <p>Portfolio</p>
-                    </div>
-                    <nav>
-                        <div class="togglebtn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <ul class="navlinks">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="resume/Neeraj joshi.pdf" target="_blank" >Resume</a></li>
-                            <li><a href="skills.html">Skills</a></li>
-                            <li><a href="about.html">About</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <hr color="#0074ed">
-            
-        </div>
-        <br>
-        
-        <div class="aboutContent">
-            
-
-            <h1><u>About Me</u></h1>
-            <br>
-            <div class="aboutText">
-    
-                <p> Hi... my name is <b>Neeraj Kumar Joshi</b>.
-                 I am a 22-year-old front-end developer and I have Completed
-                 my graduation in BCA at year 2021 from Amrapali Group of Institutes, Haldwani 
-                 and Currently I am pursuing my Masters in Computer Applications.  
-                 Which allows me to deepen my knowledge and skills in the field of computer science. 
-                 I am looking to secure a challenging position where I can effectively contribute
-                 my skills as a developer for growth of organization and myself.</p>
+      <div class="navbar">
+        <header>
+          <div class="wrapper">
+            <div class="logo">
+              <p>Portfolio</p>
             </div>
+            <nav>
+              <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="resume/Neeraj joshi.pdf" target="_blank">Resume</a>
+                </li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <hr color="#0074ed" />
+      </div>
+      <br />
 
+      <div class="aboutContent">
+        <h1><u>About Me</u></h1>
+        <br />
+        <div class="aboutText">
+          <p>
+            Hello, everyone! My name is Neeraj Kumar Joshi, and I'm a passionate
+            22-year-old front-end developer. In 2021, I completed my Bachelor's
+            in Computer Applications from Amrapali Group of Institutes in
+            Haldwani. Currently, I'm pursuing my Master's in Computer
+            Applications, which allows me to deepen my knowledge and skills in
+            the ever-evolving field of computer science.
+          </p>
+
+          <p>
+            During my academic journey, I have acquired a strong foundation in
+            programming languages such as HTML, CSS, and JavaScript. I am
+            continually exploring new frameworks and libraries to stay
+            up-to-date with the latest trends in front-end development.
+          </p>
+          <p>
+            My goal is to secure a challenging position where I can apply my
+            skills and creativity to contribute effectively to the growth of an
+            organization and, at the same time, nurture my personal and
+            professional growth. I believe that every project is an opportunity
+            to learn and improve, and I'm always excited to take on new
+            challenges that push my boundaries.
+          </p>
         </div>
+      </div>
+    </div>
+    <br />
+
+    <br />
+
+    <div class="footer">
+      <p style="
+          color: #fff;
+          text-align: center;
+          background-color: rgb(107, 102, 131);
+          padding: 20px;
+        ">
+        &copy; 2023 Neeraj Kumar Joshi
+      </p>
     </div>
     <script src="script.js"></script>
-
-</body>
+  </body>
 
 </html>
-
-
-<!-- <p> Hi... my name is <b>Neeraj Kumar Joshi</b>. </p>
-                <p> I am a 22-year-old front-end developer and I have Completed</p>
-                <p> my graduation in BCA at year 2021 from Amrapali Group of Institutes, Haldwani </p> 
-                <p> and Currently I am pursuing my Masters in Computer Applications.</p>  
-                <p> Which allows me to deepen my knowledge and skills in the field of computer science.</p> 
-                <p> I am looking to secure a challenging position where I can effectively contribute</p>
-                <p> my skills as a developer for growth of organization and myself. </p> -->
-
-        
